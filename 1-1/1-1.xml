@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <module_name>Module 1.1.1</module_name>
+    <version>1</version>
+    <!-- This is the first page -->
+    <section id="START">
+
+        <text>
+            The diagram in Figure 1 is similar to many you will work with in Statics.  
+            The L-shaped post models a common structure used to support traffic signals and large road signs.  
+            Note the orientation of the coordinate system with origin at point A and how dimensional information is 
+            given both as dimension annotations and point coordinates.  For example, the dimension a is the length of 
+            the horizontal part of the post (from the centerline of the vertical part to the connection at B) and is 
+            parallel to the x-axis.
+            \n\nThe coordinates (X_C, Y_C, 0) give the position of point C, which is the center 
+            of the bottom of the post base.
+            \n\nThe coordinates (0, 0, 0) give the position of point A, which is the location of the axis in the diagram
+            \n\nThe coordinates (X_D, Y_D, Z_D) give the position of point D, which is an arbitrary point in space. 
+            In the next section, it is represented as a sphere that has been attatched to the wall.
+        </text>
+
+        <side_by_side>
+            <number_of_elements>
+                2
+            </number_of_elements>
+        </side_by_side>
+        
+        <!-- the lamppost image -->
+        <image>
+            <URL>Lamppost.png</URL>
+            <caption>Figure 1</caption>
+        </image>
+        
+        <table>
+            <row>
+                <c>Parameter</c><c>Value</c><c>Parameter</c><c>Value</c>
+            </row>
+            <row>
+                <c>a</c>    <c>VVV</c>  <c>X_d</c>    <c>VVV</c>
+            </row>
+            <row>
+                <c>b</c>    <c>VVV</c>  <c>Y_d</c>    <c>VVV</c>
+            </row>
+            <row>
+                <c>X_c</c>  <c>VVV</c>  <c>Z_d</c>    <c>VVV</c>
+            </row>
+            <row>
+                <c>Y_c</c>  <c>VVV</c>  <c></c>       <c></c>
+            </row>
+        </table>
+
+
+        <progression_plan>
+            <next>model_intro</next>
+        </progression_plan>
+    </section>
+
+    <section id="model_intro">
+
+        <text>
+            This is the SMK model. It will be available throughout the module in various states for you to experiment with.
+            To move around, left click and drag around the model. Scroll to zoom. 
+            To change perspectives, click on perspectives and select the perspective you want to see from.
+            Blue objects can be left clicked to get information, and red objects can be dragged around.
+            /n/nGive it a shot!
+        </text>
+
+        <simulation>
+            <location>intro_model</location>
+        </simulation>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>basic_vector_literacy</next>
+        </progression_plan>
+    </section>
+
+    <section id="basic_vector_literacy">
+
+        <simulation>
+            <location>basic_model</location>
+        </simulation>
+
+        <text>The model above (and the previous sections) will help you fill out the values below.</text>
+
+        <side_by_side>
+            <number_of_elements>
+                3
+            </number_of_elements>
+        </side_by_side>
+
+        <open_responce id ="x">
+            <question_text>Distance from A to B in the X direction:</question_text>
+        </open_responce>
+        <open_responce id ="y">
+            <question_text>Distance from A to B in the Y direction:</question_text>
+        </open_responce>
+        <open_responce id ="z">
+            <question_text>Distance from A to B in the Z direction:</question_text>
+        </open_responce>
+
+        <open_responce id ="IJK">
+            <question_text>What are the coordinates in IJK notation? You don't need to use carets ("^").</question_text>
+        </open_responce>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>component_review</next>
+
+            <skip type="some">
+                <question>x</question>
+                <question>y</question>
+                <question>z</question>
+                <skips>component_review</skips>
+            </skip>
+
+            <skip type="some">
+                <question>IJK</question>
+                <skips>IJK_review</skips>
+            </skip>
+        </progression_plan>
+    </section>
+
+    <section id="component_review">
+
+        <title>Cartesean Coordinates</title>
+
+        <text>
+            This is remedial information to make up for the fact that you got the XYZ values wrong.
+        </text>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>IJK_review</next>
+        </progression_plan>
+    </section>
+
+    <section id="IJK_review">
+
+        <text>This is remedial information to make up for the fact that you got the IJK values wrong.</text>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>vector_with_components</next>
+        </progression_plan>
+    </section>
+
+    <section id="vector_with_components">
+
+        <text>play around with the vector</text>
+
+        <simulation>
+            <location>component_model</location>
+        </simulation>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>draw_a_vector</next>
+        </progression_plan>
+    </section>
+    
+    <section id="draw_a_vector">
+
+        <text>Which of these is an accurate drawing of the vector?</text>
+
+        <!-- make some images of the vector-->
+        <image>
+            <URL>https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png</URL>
+            <caption>A</caption>
+        </image>
+        <image>
+            <URL>https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png</URL>
+            <caption>B</caption>
+        </image>
+        <image>
+            <URL>https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png</URL>
+            <caption>C</caption>
+        </image>
+
+        <multiple_choice id="">
+            <responce>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <correct_answer>A</correct_answer>
+            </responce>
+        </multiple_choice>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>vector_drawing_intervention</next>
+        </progression_plan>
+    </section>
+
+    <section id="vector_drawing_intervention">
+        <text>That wasn't quite right. Let's think about that.</text>
+        <progression_plan>
+            <!-- the default next section -->
+            <next>magnitude</next>
+        </progression_plan>
+    </section>
+
+
+    <section id="magnitude">
+        <simulation>
+            <location>basic_model</location>
+        </simulation>
+
+        <multiple_choice id="magnitude">
+            <question_title>Question One:</question_title>
+            <question_text>What is the magnitude of R_ab?</question_text>
+            <responce>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <correct_answer>A</correct_answer>
+            </responce>
+        </multiple_choice>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>magnitude_intervention</next>
+            <skip type="all">
+                <skips>magnitude_intervention</skips>
+            </skip>
+        </progression_plan>
+    </section>
+
+    <section id="magnitude_intervention">
+        <text>Magnitude can be tricky! Here is some basics.</text>
+        <progression_plan>
+            <!-- the default next section -->
+            <next>move_on_x</next>
+        </progression_plan>
+    </section>
+
+    <section id="move_on_x">
+
+        <simulation>
+            <location>move_on_x</location>
+        </simulation>
+
+        <multiple_choice id="??This one is weird??">
+            <question_title>Question One</question_title>
+            <question_text>What is the first letter of the alphabet?</question_text>
+            <responce>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <correct_answer>A</correct_answer>
+            </responce>
+        </multiple_choice>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>Rdb</next>
+        </progression_plan>
+    </section>
+
+    <section id="Rdb">
+
+        <simulation>
+            <location>basic_model_two_vector</location>
+        </simulation>
+
+        <open_responce id ="IJK">
+            <question_text>What are the coordinates of Rdb in IJK?</question_text>
+        </open_responce>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>spherical_coordinates</next>
+        </progression_plan>
+    </section>
+
+    <section id="spherical_coordinates">
+
+        <simulation>
+            <location>spherical_coordinates</location>
+        </simulation>
+
+        <open_responce id ="theta">
+            <question_text>Value of Theta?</question_text>
+        </open_responce>
+
+        <open_responce id ="phi">
+            <question_text>Value of phi?</question_text>
+        </open_responce>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>spherical_table</next>
+        </progression_plan>
+    </section>
+
+
+    <section id="spherical_table">
+        <simulation>
+            <location>spherical_coordinates</location>
+        </simulation>
+
+        <!--????????build a table????????-->
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>Rad</next>
+        </progression_plan>
+    </section>
+
+    <section id="Rad">
+        <simulation>
+            <location>basic_model_two_vector</location>
+        </simulation>
+
+        <open_responce id ="">
+            <question_text>Coordinates in IJK of RAD</question_text>
+        </open_responce>
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>15</next>
+        </progression_plan>
+    </section>
+
+    <section id="15">
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>16</next>
+        </progression_plan>
+    </section>
+
+    <section id="16">
+
+        <progression_plan>
+            <!-- the default next section -->
+            <next>DONE</next>
+        </progression_plan>
+    </section>
+
+</module>
